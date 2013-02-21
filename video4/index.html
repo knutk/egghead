@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Video 4</title>
+		<link rel="stylesheet" href="../css/bootstrap.css">
+	</head>
+<body>
+
+
+
+	<div class="container" ng-app="myApp">
+			<h1>Sharing data between controllers</h1>
+			<hr>
+		<div ng-controller="FirstCtrl">
+			<input type="text" ng-model="data.message">
+			<h1>{{data.message}}</h1>
+		</div>
+		<div ng-controller="SecondCtrl">
+			<input type="text" ng-model="data.message">
+			<h1>{{data.message}}</h1>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="../js/angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
